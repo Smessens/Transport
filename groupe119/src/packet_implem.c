@@ -1,3 +1,4 @@
+
 #include "packet_interface.h"
 #include <arpa/inet.h>
 #include <stdlib.h>
@@ -142,14 +143,14 @@ pkt_status_code pkt_encode(const pkt_t* pkt, char *buf, size_t *len)
     else if (L == 1){
       uint8_t lengthToCpy = (uint8_t) length;
       memcpy(&buf[place], &lengthToCpy, 1);
-      place ++;
+      place += 2;
     }
     else {
       uint8_t *buffLen = malloc(2);
       if (buffLen == NULL) return E_NOMEM;
       if (varuint_encode(length, buffLen, 2) == -1) return -1;
       memcpy(&buf[place], (char *) buffLen, 2);
-      place += 2;
+      place ++;
       free(buffLen);
     }
 

@@ -18,6 +18,10 @@ test : all
 debug: CFLAGS += -g -DDEBUG -Wno-unused-parameter -fno-omit-frame-pointer
 debug: clean makesender clean_o
 
+tests:
+	./tests/receiver -o received_file :: 64342
+	valgrind --leak-check=yes --track-origins=yes --show-leak-kinds=all  ./sender -f tests/text.txt ::1 64342
+
 #Crée le sender
 makesender: sender read_write_loop create_socket real_address packet_implem
 	gcc sender.o read_write_loop.o create_socket.o real_address.o packet_implem.o -o sender $(CFLAGS) $(LDFLAGS)
