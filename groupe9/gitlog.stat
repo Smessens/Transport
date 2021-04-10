@@ -1,0 +1,1085 @@
+commit 93232a1e4a2405edf5ee8b889a56a2f2ffafe852
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sat Mar 27 13:19:34 2021 +0100
+
+    commit before submission final
+
+ src/receiver.c       | 265 +++++++----------------
+ src/receiverV2.c     | 520 ++++++++++++++++++++++++++++++++++++++++++++
+ src/sender.c         | 107 +++------
+ src/senderV2.c       | 601 +++++++++++++++++++++++++++++++++++++++++++++++++++
+ tests/simple_test.sh |   4 +-
+ 5 files changed, 1227 insertions(+), 270 deletions(-)
+
+commit a6e369fe646414de08d03a6df2063041b73eabcc
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Fri Mar 26 17:59:54 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 4412317350743884ed0e7d82422b60b93dfbf439
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Fri Mar 26 16:47:20 2021 +0100
+
+    change vide buffer
+
+ src/receiver.c | 34 +++++++++++++++++++++++++++++++++-
+ 1 file changed, 33 insertions(+), 1 deletion(-)
+
+commit a116d06c45a9e892b8ff885122e765fc8223bb2b
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Fri Mar 26 16:31:32 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 8be99c075ec9336fac56e880547315200b7cfee8
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Fri Mar 26 16:27:55 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 27 ++++++++++++++++++++++++++-
+ 1 file changed, 26 insertions(+), 1 deletion(-)
+
+commit 32722e6240d84e3f977152287ccb7250ba6fb207
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Fri Mar 26 14:39:25 2021 +0100
+
+    modify tests
+
+ Makefile             |  5 +++++
+ src/receiver.c       | 14 +++++++++++++-
+ tests/run_tests.sh   |  4 ++--
+ tests/simple_test.sh |  6 +++---
+ 4 files changed, 23 insertions(+), 6 deletions(-)
+
+commit be341de180af06efd1e98229a19aa4e0340f5cbe
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 23 15:32:34 2021 +0100
+
+    change receiver
+
+ src/receiver.c | 28 +++++++++-------------------
+ 1 file changed, 9 insertions(+), 19 deletions(-)
+
+commit d1fea3b1da78f250b96016c097e4f6e1f2d70931
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Wed Mar 17 12:28:31 2021 +0100
+
+    Add a break to avoid deadLock
+
+ src/sender.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 1ef0bb41b483981d8dce9826bb9296c0ccc037fc
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Wed Mar 17 11:59:03 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 36 ++++++++++++++++++++++++++++--------
+ 1 file changed, 28 insertions(+), 8 deletions(-)
+
+commit f30bd0073945ce24027c4862efce735f2fc76cb9
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Wed Mar 17 11:23:08 2021 +0100
+
+    clean print packet
+
+ src/packet_implem.c    | 9 +++++++++
+ src/packet_interface.h | 2 ++
+ src/receiver.c         | 9 ---------
+ src/sender.c           | 9 ---------
+ 4 files changed, 11 insertions(+), 18 deletions(-)
+
+commit e6b03621ce50e2ea9167dbda0f1477af14679ad1
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Wed Mar 17 00:40:17 2021 +0100
+
+    Update sender.c
+    
+    Il est trop tard pour nommer ses commits...
+
+ src/sender.c | 14 ++++++++++----
+ 1 file changed, 10 insertions(+), 4 deletions(-)
+
+commit 1f9d8d3b2e910ce39249fd342ba726c661772acd
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 16 23:35:35 2021 +0100
+
+    Deletion break
+    
+    deadlock be aware
+
+ src/sender.c | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 6550e8f63af730181f88087b149c66b003ab7166
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 16 23:17:03 2021 +0100
+
+    modify method receiver
+
+ src/additionalfunction.c |   3 +-
+ src/additionalfunction.h |   3 +-
+ src/receiver.c           | 200 ++++++++++++++++++++++++++++++++---------------
+ 3 files changed, 142 insertions(+), 64 deletions(-)
+
+commit 7d65f86ab6158ac0518a2c5b27906d40b938b502
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 16 22:58:47 2021 +0100
+
+    Update Timer on the Sender.c for the last packet
+
+ src/sender.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+commit e3c48d85a2a1d60857528f38d11574bb3e85345b
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 16 16:41:56 2021 +0100
+
+    Sender Clean up
+
+ src/sender.c | 224 +++++++++++++----------------------------------------------
+ 1 file changed, 48 insertions(+), 176 deletions(-)
+
+commit 8ea5721160eef1fd8f0ecc17dc6219e56012cf16
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 16 15:48:40 2021 +0100
+
+    little clean
+
+ chat/Makefile            |  29 -------------------
+ chat/chat                | Bin 13544 -> 0 bytes
+ chat/chat.c              |  72 -----------------------------------------------
+ chat/chat.o              | Bin 3696 -> 0 bytes
+ chat/create_socket.c     |  35 -----------------------
+ chat/create_socket.h     |  20 -------------
+ chat/create_socket.o     | Bin 2440 -> 0 bytes
+ chat/read_write_loop.c   |  44 -----------------------------
+ chat/read_write_loop.h   |  11 --------
+ chat/read_write_loop.o   | Bin 2072 -> 0 bytes
+ chat/real_adress.c       |  28 ------------------
+ chat/real_adress.h       |  17 -----------
+ chat/real_adress.o       | Bin 1824 -> 0 bytes
+ chat/wait_for_client.c   |  26 -----------------
+ chat/wait_for_client.h   |  13 ---------
+ chat/wait_for_client.o   | Bin 1704 -> 0 bytes
+ src/additionalfunction.h |   1 -
+ 17 files changed, 296 deletions(-)
+
+commit bd56ef34ce0b4f5b94d5f8150e2edb408a54a240
+Merge: 9b25eb5 1463444
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 16 15:42:33 2021 +0100
+
+    Merge branch 'main' of https://github.com/andylaurez/LINFO1341 into main
+
+commit 9b25eb56f7f63712e38fbb7df3e33838e5ad861a
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 16 15:42:20 2021 +0100
+
+    modify makefile and test
+
+ Makefile             | 2 +-
+ tests/simple_test.sh | 4 ++--
+ 2 files changed, 3 insertions(+), 3 deletions(-)
+
+commit 146344493784d6dd5be30de6f6da4f46fc38134a
+Author: andylaurez <49985033+andylaurez@users.noreply.github.com>
+Date:   Tue Mar 16 15:40:27 2021 +0100
+
+    Update README.md
+
+ README.md | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit ab28bd3c5d43aae9f1ea19aaba99000179ab8927
+Author: andylaurez <49985033+andylaurez@users.noreply.github.com>
+Date:   Tue Mar 16 15:37:59 2021 +0100
+
+    Update README.md
+
+ README.md | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+commit 91eeb094b38e7d613a1113e0e1452bb432a78e51
+Author: andylaurez <49985033+andylaurez@users.noreply.github.com>
+Date:   Tue Mar 16 15:35:28 2021 +0100
+
+    Update README.md
+
+ README.md | 16 ++++++++++------
+ 1 file changed, 10 insertions(+), 6 deletions(-)
+
+commit ae11f8a6e80aaa152d377ec690737321c76a0dec
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 16 15:06:13 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit ddafb3cd403dae053ef3e368b92bc4156dffdab4
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 16 15:02:03 2021 +0100
+
+    make tests
+
+ Makefile             | 2 +-
+ tests/simple_test.sh | 6 +++---
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 92b3e5e6a8764ed882bb53e0552284cff19bac55
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 16 14:59:22 2021 +0100
+
+    Sender Ping in milliseconde
+
+ src/sender.c | 46 ++++++++++++++++++++++------------------------
+ 1 file changed, 22 insertions(+), 24 deletions(-)
+
+commit c57e302cc305f792aa7eb1c0edb3729bb20b490c
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 16 14:35:17 2021 +0100
+
+    Sender : Correction du bug MaxSeqNum
+    
+    Erreur dans isInRange
+
+ src/sender.c | 14 +++++++++-----
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+
+commit 4ae90de90a7c6f4dfb4277f75430a0dfedc80684
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sun Mar 14 19:55:40 2021 +0100
+
+    change stats
+
+ src/receiver.c | 20 ++++++++++----------
+ src/sender.c   | 22 +++++++++++-----------
+ 2 files changed, 21 insertions(+), 21 deletions(-)
+
+commit 24675ba7945c5db1162af7f54c91735dc4769fa7
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sun Mar 14 19:47:01 2021 +0100
+
+    AMEN VERSION VALGRIND
+
+ src/sender.c | 94 +++++++++++++++++++++++++++++++++++++++++++++++-------------
+ 1 file changed, 74 insertions(+), 20 deletions(-)
+
+commit b18a7c06270182a93b0a09f67d9bfcbe4b2a83f9
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Sun Mar 14 18:25:22 2021 +0100
+
+    AMEN
+    
+    tout marche du coté du sender, plus qu'a faire les stats ( et les free lol )
+
+ src/sender.c | 33 ++++++++++++++++++---------------
+ 1 file changed, 18 insertions(+), 15 deletions(-)
+
+commit 43c11f186a10205d94e0756b78cc6c65fb13670c
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sat Mar 13 23:20:04 2021 +0100
+
+    best stat for receiver
+
+ src/receiver.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+commit 52109c4e2d15fa85bf41c593149563cac77ac67c
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sat Mar 13 22:39:51 2021 +0100
+
+    check for free in receive
+
+ Makefile                     |   2 +-
+ src/additionalfunction.c     |  41 +-----
+ src/receiver.c               |   4 +-
+ tests/dataBigMessageTest.dat | 336 +++++++++++++++++++++++++++++++++++++++++++
+ 4 files changed, 340 insertions(+), 43 deletions(-)
+
+commit 599e323bbd673a911b00b48ac7dbe5d5b6018328
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Sat Mar 13 19:15:59 2021 +0100
+
+    Loremipsum Working
+    
+    But the bigMessage crash for the receiver and full loop for the sender
+
+ src/sender.c | 107 +++++++++++++++++++++++++++++++++++++++++++++++------------
+ 1 file changed, 85 insertions(+), 22 deletions(-)
+
+commit 245be9d3734e5d425ea7d7cc38e5dea519193caf
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sat Mar 13 18:41:05 2021 +0100
+
+    correct win in receiver v2
+
+ src/receiver.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 18a25bcdd7bd412e5e05a00231c4e7a7982f94d1
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sat Mar 13 18:38:53 2021 +0100
+
+    correct win in receiver
+
+ src/receiver.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 8ef20cd4b2915959d40ddea17eec515a1a0207c0
+Merge: fed0903 c1984dd
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sat Mar 13 18:29:06 2021 +0100
+
+    Merge branch 'main' of https://github.com/andylaurez/LINFO1341 into main
+
+commit fed09038084186583020f40302b297a2c4be7f13
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sat Mar 13 18:28:51 2021 +0100
+
+    change win receiver
+
+ src/receiver.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+
+commit c1984dd9b0d8d24e95eb3842ea53462d23cdfc2e
+Author: andylaurez <49985033+andylaurez@users.noreply.github.com>
+Date:   Sat Mar 13 17:38:10 2021 +0100
+
+    Update README.md
+
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 74a8253a80327184eb0491483186dd36a9311648
+Author: andylaurez <49985033+andylaurez@users.noreply.github.com>
+Date:   Sat Mar 13 17:28:54 2021 +0100
+
+    Update README.md
+
+ README.md | 45 ++++++++++++++++++++++++++++++++++++---------
+ 1 file changed, 36 insertions(+), 9 deletions(-)
+
+commit bf5b6fce9cc751469804142291f2790ef4fbe2f3
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sat Mar 13 15:18:45 2021 +0100
+
+    debug sender
+
+ src/sender.c | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+commit 1da97d5c4c7dec65a1e7f34813dfece5f1ebff9f
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sat Mar 13 14:20:54 2021 +0100
+
+    add timestamp sender
+
+ src/receiver.c     |   2 +-
+ src/sender.c       |   9 +-
+ tests/biglorem.txt | 509 +++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 518 insertions(+), 2 deletions(-)
+
+commit 46f5b622afd1dd7387bdd391ae9e75d41a733c91
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Thu Mar 11 11:45:49 2021 +0100
+
+    add log txt in makefile
+
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 160b04eed9f811cafc4faadacd9ccab50afbade9
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Thu Mar 11 11:34:34 2021 +0100
+
+    adtimeout
+
+ src/receiver.c | 26 ++++++++++++++++++++++++--
+ 1 file changed, 24 insertions(+), 2 deletions(-)
+
+commit 1bfb8b96101847764d69ff5ffe5078434c61527c
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Thu Mar 11 10:59:43 2021 +0100
+
+    Sender.c BigMessage Fix
+    
+    EZ, j'étais trop con mais a force on fini par l'oublier !
+
+ src/sender.c | 48 +++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 37 insertions(+), 11 deletions(-)
+
+commit 2e5b1f2ada37f4d9155d894924d3abc41f4fd2c5
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Wed Mar 10 21:29:52 2021 +0100
+
+    SimpleMessage Ok (Sender.c)
+    
+    but the bigMessage full loop ( not working yet )
+
+ src/sender.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit fc6b639b8762fbc1a76a9383b144dfdb10afc590
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Wed Mar 10 15:53:22 2021 +0100
+
+    Update sender.c
+    
+    last pkt encode have a MemError
+
+ src/sender.c | 21 ++++++++++++++++++---
+ 1 file changed, 18 insertions(+), 3 deletions(-)
+
+commit 811ba297318fe3c138efbaba6cc905bea7b56530
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Wed Mar 10 13:37:21 2021 +0100
+
+    change seq ack for last ack
+
+ src/receiver.c | 9 ++++++++-
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+commit d253a8d74e8a540ee57879e16b616522dc16a0ae
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Wed Mar 10 13:36:15 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 53 ++++++++++++++++++++++++++++++++++++++++++++++++-----
+ 1 file changed, 48 insertions(+), 5 deletions(-)
+
+commit 24a699cd535667d6854a1c683f2ac18c0ae6a6b0
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Wed Mar 10 11:52:31 2021 +0100
+
+    remove while test debug in receiver
+
+ src/receiver.c | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+
+commit 0c9dc95b67d38e32d03dc055adc733a0e93cbcf3
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Wed Mar 10 11:37:20 2021 +0100
+
+    modify free queu receive for no memory leak
+
+ src/additionalfunction.c | 6 ++++--
+ src/receiver.c           | 3 ++-
+ 2 files changed, 6 insertions(+), 3 deletions(-)
+
+commit 1c47530666a00a15b90ccd3f81476a5274fa662a
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 9 23:05:01 2021 +0100
+
+    add print packet receive and send
+
+ src/receiver.c | 26 ++++++++++++++++++++++----
+ 1 file changed, 22 insertions(+), 4 deletions(-)
+
+commit 56e004e0c2e745a01414b4cdd9c284b7dba6d56f
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 9 22:17:44 2021 +0100
+
+    add ack end of transfer
+
+ src/receiver.c       | 36 ++++++++++++++++++++++++++++++++----
+ tests/loremipsum.txt | 23 +++++++++++++++++++++++
+ 2 files changed, 55 insertions(+), 4 deletions(-)
+
+commit aebae670c66b1838c469ee2a6963132d1823d6ec
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 9 21:38:30 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 64 +++++++++++++++++++++++++++++++++++++++++++++---------------
+ 1 file changed, 48 insertions(+), 16 deletions(-)
+
+commit f393a959737bf3bda0d9145bb6c8f63498ec6d50
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 9 19:07:21 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 19 +++++++++++++------
+ 1 file changed, 13 insertions(+), 6 deletions(-)
+
+commit 4a971e911d51017ec089adcb58164c6b7b4bd717
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 9 18:43:06 2021 +0100
+
+    Update sender.c
+    
+    SeqNum update
+
+ src/sender.c | 40 +++++++++++++++++++++++++---------------
+ 1 file changed, 25 insertions(+), 15 deletions(-)
+
+commit 850b2087875749aa408372f5329da2a13fd5412d
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 9 17:54:29 2021 +0100
+
+    remove a print chiant
+
+ src/receiver.c | 2 --
+ 1 file changed, 2 deletions(-)
+
+commit 7618576af0efa3b0c094f2dfc5be03906863766e
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 9 17:50:45 2021 +0100
+
+    use print dump log
+
+ src/packet_implem.c | 3 ++-
+ src/receiver.c      | 4 ++--
+ src/sender.c        | 7 ++++++-
+ 3 files changed, 10 insertions(+), 4 deletions(-)
+
+commit 46c1df8a0792b5a5a4a70ef8bd4c8e81b90a7bb3
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 9 17:43:18 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 24 +++++++++++++++++-------
+ 1 file changed, 17 insertions(+), 7 deletions(-)
+
+commit f54258ef225a0eca3fb1e0e0a2a2f6b5096432cc
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 9 15:14:26 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1eb5de714c623dd1435429628a91c0f552f88175
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 9 15:13:52 2021 +0100
+
+    clean in makefile
+
+ Makefile       | 2 +-
+ src/receiver.c | 1 +
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit bf2663153953127ec4563e09dd3fb41d3f70a904
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 9 15:02:11 2021 +0100
+
+    mini update
+
+ src/additionalfunction.h | 2 +-
+ src/receiver.c           | 5 ++---
+ 2 files changed, 3 insertions(+), 4 deletions(-)
+
+commit 0e8e0c07e3834229dc9415eb810a0a52a9db8dc0
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 9 15:00:44 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 31 ++++++++++++++++++++++++-------
+ 1 file changed, 24 insertions(+), 7 deletions(-)
+
+commit 008417793524b0c34281b4a3f58724ad1604fd3c
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Mon Mar 8 16:04:42 2021 +0100
+
+    Update sender.c
+    
+    simple test work but sender infinite loop at the end.
+
+ src/sender.c | 61 +++++++++++++++++++++++++++++++++++++-----------------------
+ 1 file changed, 38 insertions(+), 23 deletions(-)
+
+commit 55cd3f26bf1be52d012ed83ee2e1b8ed516e58bd
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sun Mar 7 15:16:41 2021 +0100
+
+    change receiver for high optimisation
+
+ src/additionalfunction.c | 15 +++++---
+ src/additionalfunction.h |  5 +--
+ src/receiver.c           | 93 ++++++++++++++++++++++++++++++------------------
+ 3 files changed, 73 insertions(+), 40 deletions(-)
+
+commit dcdbcd82176696c592782098b4ed7a46092dd14a
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sat Mar 6 22:15:20 2021 +0100
+
+    add all function of structure for buffer receive
+
+ src/additionalfunction.c | 85 ++++++++++++++++++++++++++++++++++++++++++++----
+ src/additionalfunction.h |  7 ++++
+ 2 files changed, 85 insertions(+), 7 deletions(-)
+
+commit d638e8ad0b5bce75ec757686eaf016cdc74a888e
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Sat Mar 6 16:02:56 2021 +0100
+
+    begin new method buffer for receiver
+
+ src/additionalfunction.c | 75 +++++++++++++++++++++++++++++++++++++++++++++++-
+ src/additionalfunction.h | 29 +++++++++++++++++++
+ src/receiver.c           | 14 ++++-----
+ 3 files changed, 109 insertions(+), 9 deletions(-)
+
+commit a440c6b75d2f8e0c6368740b1a15350b942e1467
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Fri Mar 5 19:44:56 2021 +0100
+
+    Sender.c pointer of bufWindow debug
+    
+    think the first pkt is ok but the last failed.
+
+ src/sender.c | 125 ++++++++++++++++++++++++++++-------------------------------
+ 1 file changed, 60 insertions(+), 65 deletions(-)
+
+commit 5d874b2ab476e9db4d1517a509b460b341facc88
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Fri Mar 5 17:08:17 2021 +0100
+
+    add bullshit lot of error debug
+
+ src/receiver.c | 16 +++++++++++++++-
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+
+commit 2866288f2774d9467d5cf78a26cea3149da3ac44
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Fri Mar 5 16:40:33 2021 +0100
+
+    add print debug receiver
+
+ src/receiver.c | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+
+commit ee16c8c49e2d38d761f561f1acadfc44a59e3720
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Fri Mar 5 16:35:12 2021 +0100
+
+    Sender.c segFault Fix
+
+ src/sender.c | 33 +++++++++++++++++++++++++++++----
+ 1 file changed, 29 insertions(+), 4 deletions(-)
+
+commit 3e8ecff5019928e88ba3cf313903c3d4026bb746
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Fri Mar 5 16:12:18 2021 +0100
+
+    Make test Cocofix
+    
+    Segmentation fault (core dumped)
+
+ Makefile     | 1 +
+ src/sender.c | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit a928a2e74fce3544b1a2f1c1e64f4746ad1f69eb
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Fri Mar 5 13:45:08 2021 +0100
+
+    stats in sender.c
+
+ src/sender.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+
+commit bd8f5d8a837f567e825893189f7e52a4e7ff5ebf
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Fri Mar 5 13:40:50 2021 +0100
+
+    comment stats_filename in sender.c
+
+ src/sender.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit b18e8280d33e2214895c2509ce457bdbfb4712da
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Fri Mar 5 13:27:50 2021 +0100
+
+    MakeFile add Flag -lz
+
+ Makefile     | 2 +-
+ src/sender.c | 5 ++++-
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+commit 238b33c6545151127f636523286452ac9f27a1c0
+Author: MaximeJdDS <48825681+MaximeJdDS@users.noreply.github.com>
+Date:   Fri Mar 5 12:25:39 2021 +0100
+
+    Delete sender.o
+    
+    cleaning noob error...
+
+ src/sender.o | Bin 9696 -> 0 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit 4727ef3d8d2c37509457eecc5e13422635abe93e
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Thu Mar 4 18:57:38 2021 +0100
+
+    receiver stat
+
+ src/receiver.c | 86 ++++++++++++++++++++++++++++++++++++++++++++++------------
+ 1 file changed, 68 insertions(+), 18 deletions(-)
+
+commit 0016a4b14622cc4e113611982ecc3489988ceff2
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Thu Mar 4 18:54:47 2021 +0100
+
+    Compilation error Sender.c
+
+ src/sender.c |  11 ++++++++---
+ src/sender.o | Bin 0 -> 9696 bytes
+ 2 files changed, 8 insertions(+), 3 deletions(-)
+
+commit 400e2b4647f0e68cdf8622e81a3829e5b5f51701
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Thu Mar 4 18:46:04 2021 +0100
+
+    comment in sender.c
+
+ src/sender.c | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 518e8a0302fea10d259fab3d43cfa9315d836c10
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Thu Mar 4 18:34:29 2021 +0100
+
+    sender.c the last of the day
+
+ src/sender.c | 18 ++++++++++++++++--
+ 1 file changed, 16 insertions(+), 2 deletions(-)
+
+commit 0df19490f52fc84b65eecc7fe48b8f3385829c68
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Thu Mar 4 18:17:00 2021 +0100
+
+    sender part3
+
+ src/sender.c | 44 ++++++++++++++++++++++++++++----------------
+ 1 file changed, 28 insertions(+), 16 deletions(-)
+
+commit 32dd5364275a1b747cc5690f9080f3a525d34516
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Thu Mar 4 17:46:30 2021 +0100
+
+    sender.c la suite
+
+ src/sender.c | 68 ++++++++++++++++++++++++++++++++++++++++++++----------------
+ 1 file changed, 50 insertions(+), 18 deletions(-)
+
+commit f13a0bfc5df3130fa78db6aa39e1f3cdee99d89b
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Thu Mar 4 15:41:39 2021 +0100
+
+    receiver return correct seqnum
+
+ src/packet_implem.c | 1 -
+ src/receiver.c      | 8 +++++++-
+ 2 files changed, 7 insertions(+), 2 deletions(-)
+
+commit f6a19c69198b83662111a337b10d88788784ad25
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Thu Mar 4 15:39:26 2021 +0100
+
+    sender Ack management part1
+
+ src/sender.c | 125 ++++++++++++++++++++++++++++++++++++-----------------------
+ 1 file changed, 76 insertions(+), 49 deletions(-)
+
+commit 13459c4aedb08183c4a5c880054178fec318907b
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Thu Mar 4 14:21:12 2021 +0100
+
+    add send_ack in receiver
+
+ src/receiver.c | 34 +++++++++++++++++++++++-----------
+ 1 file changed, 23 insertions(+), 11 deletions(-)
+
+commit 7035469e2a01ec49f851137021e5ddd2925fc437
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Thu Mar 4 12:38:25 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 99 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 97 insertions(+), 2 deletions(-)
+
+commit 5f2ff00012e38ad50eff539b4329feb28df9c75f
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Thu Mar 4 10:21:36 2021 +0100
+
+    Update sender.c
+    
+    cours de obo
+
+ src/sender.c | 42 ++++++++++++++++++++++++++++++++++++++----
+ 1 file changed, 38 insertions(+), 4 deletions(-)
+
+commit a7df201f894002cfc656b4e7deea67d939f0db26
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Wed Mar 3 22:45:44 2021 +0100
+
+    receiver without ack
+
+ src/additionalfunction.h |  15 +++++
+ src/receiver.c           | 149 +++++++++++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 164 insertions(+)
+
+commit 5b421d32d64befd7a7c614dcf5ba9a0f8b81d09c
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Wed Mar 3 18:48:34 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 39 +++++++++++++++++++++++++++++++++++++--
+ 1 file changed, 37 insertions(+), 2 deletions(-)
+
+commit d1cff58f5f838bb23e42019ffc99a5422759a557
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Wed Mar 3 16:34:12 2021 +0100
+
+    Update sender.c
+
+ src/sender.c | 21 ++++++++++++---------
+ 1 file changed, 12 insertions(+), 9 deletions(-)
+
+commit dc2db8361c106459091477b5b99f39ea5972235c
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 2 17:02:26 2021 +0100
+
+    add addfunct and packet in makefile
+
+ Makefile                 |  8 +++++---
+ chat/real_adress.c       |  1 -
+ src/additionalfunction.c |  7 +++----
+ src/receiver.c           | 18 +++++++++++++++++-
+ src/sender.c             | 27 ++++++++++++++++++++++++++-
+ 5 files changed, 51 insertions(+), 10 deletions(-)
+
+commit d3cc5e28123d334d84751265fc4c390dc0a1393f
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 2 16:45:39 2021 +0100
+
+    add BigDataTest ( 100 000 octets )
+
+ tests/dataBigMessageTest.dat | 500 +++++++++++++++++++++++++++++++++++++++++++
+ tests/simple_test.sh         |   2 +-
+ 2 files changed, 501 insertions(+), 1 deletion(-)
+
+commit edebf471576afddc574f4c974b9ad25879078591
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 2 16:11:01 2021 +0100
+
+    Update dataTest.dat
+
+ tests/dataTest.dat | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 6f7be2e4ece1b8d92140488d917c5383208727f9
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Mar 2 15:54:20 2021 +0100
+
+    Create dataTest.dat
+
+ tests/dataTest.dat | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit ae961c7b1525e7e6308b640b42b74d421e0b107f
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Mar 2 15:32:48 2021 +0100
+
+    add fichier additional function
+
+ chat/Makefile            |   2 +-
+ chat/chat                | Bin 0 -> 13544 bytes
+ chat/chat.c              |   2 +-
+ chat/chat.o              | Bin 0 -> 3696 bytes
+ chat/create_socket.o     | Bin 0 -> 2440 bytes
+ chat/read_write_loop.c   |   2 +-
+ chat/read_write_loop.o   | Bin 0 -> 2072 bytes
+ chat/real_adress.c       |   2 +-
+ chat/real_adress.o       | Bin 0 -> 1824 bytes
+ chat/wait_for_client.o   | Bin 0 -> 1704 bytes
+ src/additionalfunction.c | 127 +++++++++++++++++++++++++++++++++++++++++++++++
+ src/additionalfunction.h |  46 +++++++++++++++++
+ 12 files changed, 177 insertions(+), 4 deletions(-)
+
+commit 53b255e596e366f84d8761776a90126ba7397df4
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Mon Mar 1 18:54:34 2021 +0100
+
+    add all function for envoyer et recevoir
+
+ chat/create_socket.c   | 30 ++++++++++++++++++++++++++++--
+ chat/read_write_loop.c | 41 ++++++++++++++++++++++++++++++++++++++++-
+ chat/real_adress.c     |  1 -
+ chat/wait_for_client.c | 24 ++++++++++++++++++++++--
+ 4 files changed, 90 insertions(+), 6 deletions(-)
+
+commit 7a2463d70fa37afce3a7d9d4f9e32d0c5afd6331
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Mon Mar 1 15:17:30 2021 +0100
+
+    real_adress()
+
+ chat/real_adress.c | 26 +++++++++++++++++++++++++-
+ 1 file changed, 25 insertions(+), 1 deletion(-)
+
+commit 9a55a0ee8d27f29c1f9610c5868f5c1bab953461
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Mon Mar 1 12:08:06 2021 +0100
+
+    add fichier exo inginious Envoyer et Recevoir
+
+ chat/Makefile          | 29 ++++++++++++++++++++
+ chat/chat.c            | 72 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ chat/create_socket.c   |  9 +++++++
+ chat/create_socket.h   | 20 ++++++++++++++
+ chat/read_write_loop.c |  5 ++++
+ chat/read_write_loop.h | 11 ++++++++
+ chat/real_adress.c     |  6 +++++
+ chat/real_adress.h     | 17 ++++++++++++
+ chat/wait_for_client.c |  6 +++++
+ chat/wait_for_client.h | 13 +++++++++
+ 10 files changed, 188 insertions(+)
+
+commit 4ef78d132a1fb927df3c2abcaa6e6459c985d2af
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Wed Feb 24 16:14:41 2021 +0100
+
+    PACKET IMPLEM 100 POURCENT
+
+ src/packet_implem.c | 44 +++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 33 insertions(+), 11 deletions(-)
+
+commit d1f212175853e2b668fe85cd7825225f2fc9e70a
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Wed Feb 24 12:50:59 2021 +0100
+
+    40% inginious
+
+ src/packet_implem.c | 18 ++++++++++++++++--
+ 1 file changed, 16 insertions(+), 2 deletions(-)
+
+commit 03e9f4bea7604570c88e523336630792a1819d12
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Feb 23 23:08:59 2021 +0100
+
+    packet implem encode
+
+ src/packet_implem.c | 117 +++++++++++++++++++++++++++++++++++++++++-----------
+ 1 file changed, 94 insertions(+), 23 deletions(-)
+
+commit 9c504e332bef74a891fc3b1b1738a294db144729
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Feb 23 18:14:51 2021 +0100
+
+    packet implem get + set + decode
+
+ src/packet_implem.c | 179 ++++++++++++++++++++++++++++++++++++++++++++--------
+ 1 file changed, 154 insertions(+), 25 deletions(-)
+
+commit 062d51afb15640285b2538ce9ec0843ce779e679
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Feb 23 13:35:10 2021 +0100
+
+    add file packet interface
+
+ src/packet_implem.c    | 131 ++++++++++++++++++++++++++++++++++++++++++++--
+ src/packet_interface.h | 138 ++++++++++++++++++++++++++++++++++++++++++++++---
+ 2 files changed, 260 insertions(+), 9 deletions(-)
+
+commit cf4e2121adf91ecbefd6fd8675de7e374d67715a
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Feb 23 13:32:42 2021 +0100
+
+    add file packet interface
+
+ src/packet_implem.c    | 4 ++++
+ src/packet_interface.h | 8 ++++++++
+ 2 files changed, 12 insertions(+)
+
+commit 7a69a4250a46925c639fb410a133b1230291b04f
+Author: andylaurez <49985033+andylaurez@users.noreply.github.com>
+Date:   Tue Feb 16 15:39:14 2021 +0100
+
+    Delete .idea directory
+
+ .idea/.gitignore     |  8 --------
+ .idea/LINFO1341.iml  |  2 --
+ .idea/deployment.xml | 14 --------------
+ .idea/misc.xml       | 18 ------------------
+ .idea/modules.xml    |  8 --------
+ .idea/vcs.xml        |  6 ------
+ 6 files changed, 56 deletions(-)
+
+commit c7120b4ace7e7f7226eb47296b9366c6ba3b0bdd
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Feb 16 15:37:36 2021 +0100
+
+    Update .gitignore
+
+ .gitignore | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit d3b74ec48497b348f758853aec519ec4e0fadb0a
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Feb 16 15:36:43 2021 +0100
+
+    Create .gitignore
+
+ .gitignore | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit 1fd31e114a34c69e1bd769177103d87e7da1705d
+Author: mjacquesdedi <max.jacques@student.uclouvain.be>
+Date:   Tue Feb 16 15:32:27 2021 +0100
+
+    first Commit
+
+ .idea/.gitignore     |  8 ++++++++
+ .idea/LINFO1341.iml  |  2 ++
+ .idea/deployment.xml | 14 ++++++++++++++
+ .idea/misc.xml       | 18 ++++++++++++++++++
+ .idea/modules.xml    |  8 ++++++++
+ .idea/vcs.xml        |  6 ++++++
+ 6 files changed, 56 insertions(+)
+
+commit e40352bb984fe2b7be28c44c760a9e4c908ec0e5
+Author: alaurez <andy.laurez@student.uclouvain.be>
+Date:   Tue Feb 16 15:21:42 2021 +0100
+
+    first commit
+
+ Makefile             | 58 ++++++++++++++++++++++++++++++++++++++++++++++++
+ README.md            | 20 ++++++++++++++++-
+ src/log.c            | 21 ++++++++++++++++++
+ src/log.h            | 57 +++++++++++++++++++++++++++++++++++++++++++++++
+ src/receiver.c       | 58 ++++++++++++++++++++++++++++++++++++++++++++++++
+ src/sender.c         | 62 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ tests/run_tests.sh   |  6 +++++
+ tests/simple_test.sh | 58 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 8 files changed, 339 insertions(+), 1 deletion(-)
+
+commit a9a55b2ea10637f8933aba190740b741065be692
+Author: andylaurez <49985033+andylaurez@users.noreply.github.com>
+Date:   Tue Feb 16 15:12:36 2021 +0100
+
+    Initial commit
+
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)

@@ -1,0 +1,467 @@
+commit ffaa4d05f761c72107a169234dbf73b832420875
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Sun Mar 28 18:17:40 2021 +0200
+
+    derniere modif
+
+ Makefile             | 2 +-
+ tests/large_file.sh  | 6 +++---
+ tests/run_tests.sh   | 2 ++
+ tests/simple_test.sh | 8 ++++----
+ tests/testAll.sh     | 8 ++++----
+ tests/testCut.sh     | 6 +++---
+ tests/testDelay.sh   | 8 ++++----
+ tests/testError.sh   | 6 +++---
+ tests/testLoss.sh    | 6 +++---
+ tests/testNewFlag.sh | 8 ++++----
+ 10 files changed, 31 insertions(+), 29 deletions(-)
+
+commit 2c7768881c5d78c52f45da63e6835e27e3cf0ea8
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Sun Mar 28 15:48:59 2021 +0200
+
+    plus que le rapport
+
+ Makefile                   |   3 ++-
+ src/receiver.c             |  13 +++++++++----
+ src/sender.c               |  14 ++++++++++++--
+ tests/large_file.sh        |  16 ++++++++--------
+ link_sim => tests/link_sim | Bin
+ tests/run_tests.sh         |  38 ++++++++++++++++++++++++++++++++++----
+ tests/simple_test.sh       |  16 ++++++++--------
+ tests/testAll.sh           |  16 ++++++++--------
+ tests/testCut.sh           |  16 ++++++++--------
+ tests/testDelay.sh         |  16 ++++++++--------
+ tests/testError.sh         |  16 ++++++++--------
+ tests/testLoss.sh          |  16 ++++++++--------
+ tests/testNewFlag.sh       |  16 ++++++++--------
+ 13 files changed, 121 insertions(+), 75 deletions(-)
+
+commit 29bb4c1de7d613b8e6dbe61cd72c6aa5c2cb311a
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Sun Mar 28 14:31:23 2021 +0200
+
+    ajout test, modif makefile, retest group 101,ajout commentaires
+
+ Makefile             |   6 +-
+ input_file           | Bin 30523 -> 0 bytes
+ link_sim.log         | 346 ---------------------------------------------------
+ packet_implem.o      | Bin 20200 -> 0 bytes
+ queue.o              | Bin 13832 -> 0 bytes
+ received_file        | Bin 30523 -> 0 bytes
+ receiver             | Bin 51088 -> 0 bytes
+ receiver.csv         |   9 --
+ receiver.log         |  18 ---
+ receiver.o           | Bin 36280 -> 0 bytes
+ sender               | Bin 55968 -> 0 bytes
+ sender.csv           |  11 --
+ sender.log           |  22 ----
+ sender.o             | Bin 40168 -> 0 bytes
+ src/minheap.c        |  93 --------------
+ src/minheap.h        |  12 --
+ src/queue.c          | 140 +--------------------
+ src/queue.h          |  99 ++++++++++++++-
+ src/receiver.c       | 207 +++++++++++++++---------------
+ src/sender.c         | 165 ++++++++++++------------
+ suitetests           | Bin 41672 -> 0 bytes
+ suitetests.o         | Bin 22368 -> 0 bytes
+ tests/run_tests.sh   |   3 +
+ tests/testNewFlag.sh |  62 +++++++++
+ 24 files changed, 352 insertions(+), 841 deletions(-)
+
+commit d19df6e9fb0f94778cadec1541ca52cbf9780de8
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Sun Mar 28 14:02:35 2021 +0200
+
+    ajout des derniers tests
+
+ input_file         |  Bin 30523 -> 30523 bytes
+ link_sim.log       | 2190 ++++++++--------------------------------------------
+ received_file      |  Bin 244864 -> 30523 bytes
+ receiver.log       |   18 +
+ sender.csv         |    8 +-
+ sender.log         |   22 +
+ tests/run_tests.sh |   12 +
+ tests/testAll.sh   |    2 +-
+ tests/testCut.sh   |   62 ++
+ tests/testDelay.sh |   62 ++
+ tests/testError.sh |   62 ++
+ tests/testLoss.sh  |   62 ++
+ 12 files changed, 606 insertions(+), 1894 deletions(-)
+
+commit 9d752a1c4ead91c2519d018020d234411354f825
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Sat Mar 27 11:57:12 2021 +0100
+
+    modification des tests
+
+ Makefile             |    2 +
+ input_file           |  Bin 0 -> 30523 bytes
+ link_sim             |  Bin 0 -> 31120 bytes
+ link_sim.log         | 1934 +++++++++++++++++++++++++++
+ packet_implem.o      |  Bin 0 -> 20200 bytes
+ queue.o              |  Bin 0 -> 13832 bytes
+ received_file        | 3584 ++++++++++++++++++++++++++++++++++++++++++++++++++
+ receiver             |  Bin 0 -> 51088 bytes
+ receiver.csv         |    9 +
+ receiver.log         |    0
+ receiver.o           |  Bin 0 -> 36280 bytes
+ sender               |  Bin 0 -> 55968 bytes
+ sender.csv           |   11 +
+ sender.log           |    0
+ sender.o             |  Bin 0 -> 40168 bytes
+ suitetests           |  Bin 0 -> 41672 bytes
+ suitetests.o         |  Bin 0 -> 22368 bytes
+ tests/large_file.sh  |   62 +
+ tests/run_tests.sh   |    6 +
+ tests/simple_test.sh |    8 +-
+ tests/suitetests.c   |   12 +-
+ tests/testAll.sh     |   62 +
+ 22 files changed, 5685 insertions(+), 5 deletions(-)
+
+commit e0c0f0329e150fb085ff8d7ce75db8993c7acad5
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Thu Mar 25 20:09:45 2021 +0100
+
+    fin proejt
+
+ Makefile            |    4 +-
+ input_file          |  Bin 30523 -> 0 bytes
+ packet_implem.o     |  Bin 7712 -> 0 bytes
+ queue.o             |  Bin 4736 -> 0 bytes
+ received_file       |  Bin 30523 -> 0 bytes
+ receiver            |  Bin 31816 -> 0 bytes
+ receiver.log        |    0
+ receiver.o          |  Bin 15016 -> 0 bytes
+ sender              |  Bin 31816 -> 0 bytes
+ sender.log          |    0
+ sender.o            |  Bin 14992 -> 0 bytes
+ src/packet_implem.c |    4 +-
+ src/queue.c         |   17 +-
+ src/queue.h         |    2 +
+ src/receiver.c      |  127 ++-
+ src/sender.c        |  199 +++-
+ text.txt            | 3068 ++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 17 files changed, 3326 insertions(+), 95 deletions(-)
+
+commit 257acc1247f9f7707ddd0bb00be375d813ddab57
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Mar 24 16:22:51 2021 +0100
+
+    Makefil emodif
+
+ Makefile      |   3 ++-
+ Tests         | Bin 22688 -> 0 bytes
+ input_file    | Bin 30523 -> 30523 bytes
+ output.txt    | Bin 512 -> 0 bytes
+ received_file | Bin 30523 -> 30523 bytes
+ receiver      | Bin 31816 -> 31816 bytes
+ sender        | Bin 31816 -> 31816 bytes
+ suitetests.o  | Bin 13648 -> 0 bytes
+ 8 files changed, 2 insertions(+), 1 deletion(-)
+
+commit 425b54fd6150576c607726fb106fbed8038feb4c
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Mar 24 15:40:32 2021 +0100
+
+    TEST
+
+ input_file           | Bin 512 -> 30523 bytes
+ output.txt           | Bin 37464 -> 512 bytes
+ packet_implem.o      | Bin 7696 -> 7712 bytes
+ received_file        | Bin 0 -> 30523 bytes
+ receiver.log         |   6 ------
+ sender.log           |  10 ----------
+ suitetests.o         | Bin 0 -> 13648 bytes
+ tests/run_tests.sh   |   2 ++
+ tests/simple_test.sh |   6 +++---
+ 9 files changed, 5 insertions(+), 19 deletions(-)
+
+commit 326446a7697e27cc17d9c8702547a1a25f886d3f
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Mar 24 15:32:16 2021 +0100
+
+    valgrind
+
+ Makefile             |     2 +-
+ input_file           |   Bin 512 -> 512 bytes
+ output.txt           |   572 +++
+ packet_implem.o      |   Bin 0 -> 7696 bytes
+ queue.o              |   Bin 0 -> 4736 bytes
+ receiver             |   Bin 0 -> 31816 bytes
+ receiver.log         |    10 +-
+ receiver.o           |   Bin 0 -> 15016 bytes
+ sender               |   Bin 0 -> 31816 bytes
+ sender.log           |    28 +-
+ sender.o             |   Bin 0 -> 14992 bytes
+ src/packet_implem.c  |     7 +-
+ src/queue.c          |    11 +-
+ src/queue.h          |     1 +
+ src/receiver.c       |   125 +-
+ src/sender.c         |    50 +-
+ tests/run_tests.sh   |     4 +
+ tests/simple_test.sh |    58 +
+ text.txt             | 13430 +------------------------------------------------
+ 19 files changed, 785 insertions(+), 13513 deletions(-)
+
+commit b3c360faa7cf4370ab28c30611760aabeb4c81c9
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Mon Mar 22 19:26:28 2021 +0100
+
+    fin nack
+
+ packet_implem.o     |   Bin 7496 -> 0 bytes
+ queue.o             |   Bin 4368 -> 0 bytes
+ src/packet_implem.c |     5 +-
+ src/receiver.c      |    62 +-
+ src/sender.c        |    31 +-
+ suitetests.o        |   Bin 13504 -> 0 bytes
+ text.txt            | 14329 ++++++++++++++++++++++++++++++++++++++++++++++++--
+ 7 files changed, 14015 insertions(+), 412 deletions(-)
+
+commit 36c7141379d8072dd5778b40b5f77ec1ea7421e6
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Thu Mar 18 17:30:02 2021 +0100
+
+    remise1
+
+ Makefile             |  35 +++--
+ Tests                | Bin 0 -> 22688 bytes
+ input_file           | Bin 0 -> 512 bytes
+ output.txt           | 389 -----------------------------------------------
+ output.txt.          | 414 ---------------------------------------------------
+ packet_implem.o      | Bin 0 -> 7496 bytes
+ queue.o              | Bin 0 -> 4368 bytes
+ receiver.log         |   4 +
+ sender.log           |  18 +++
+ src/receiver.c       |  25 ++--
+ src/sender.c         |  26 ++--
+ suitetests.o         | Bin 0 -> 13504 bytes
+ tests/run_tests.sh   |   6 -
+ tests/simple_test.sh |  58 --------
+ tests/suitetests.c   | 185 +++++++++++++++++++++++
+ 15 files changed, 260 insertions(+), 900 deletions(-)
+
+commit 21e4513b27b5a2d623de688f2d36f69f5b7891fa
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Tue Mar 16 22:21:07 2021 +0100
+
+    finnnnnnnnnn
+
+ output.txt     |  486 ++++++++--
+ src/queue.c    |   30 +-
+ src/queue.h    |    6 +
+ src/receiver.c |   68 +-
+ src/sender.c   |   57 +-
+ text.txt       | 2728 ++++++++------------------------------------------------
+ 6 files changed, 906 insertions(+), 2469 deletions(-)
+
+commit 2ad48c870c1564a61c89ab690b09be68431bdd02
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Sat Mar 13 10:16:16 2021 +0100
+
+    saluté
+
+ minheap.o       | Bin 3040 -> 0 bytes
+ packet_implem.o | Bin 7496 -> 0 bytes
+ queue           | Bin 22304 -> 0 bytes
+ queue.o         | Bin 3312 -> 0 bytes
+ receiver        | Bin 23328 -> 0 bytes
+ receiver.o      | Bin 10520 -> 0 bytes
+ sender          | Bin 23424 -> 0 bytes
+ sender.o        | Bin 10552 -> 0 bytes
+ 8 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 8c5107f08c879cff29774a61328e2e1e6b709f99
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Thu Mar 11 16:18:20 2021 +0100
+
+    presque fin selective repeat
+
+ Makefile          |   23 +-
+ minheap.o         |  Bin 0 -> 3040 bytes
+ output.txt        |   97 +++
+ output.txt.       |  414 ++++++++++
+ packet_implem.o   |  Bin 0 -> 7496 bytes
+ queue             |  Bin 0 -> 22304 bytes
+ queue.o           |  Bin 0 -> 3312 bytes
+ receiver          |  Bin 0 -> 23328 bytes
+ receiver.o        |  Bin 0 -> 10520 bytes
+ sender            |  Bin 0 -> 23424 bytes
+ sender.o          |  Bin 0 -> 10552 bytes
+ src/heap          |  Bin 16784 -> 0 bytes
+ src/minheap.c     |    2 +
+ src/minheap.h     |    9 +-
+ src/packet_implem |  Bin 17800 -> 0 bytes
+ src/packeti       |  Bin 17800 -> 0 bytes
+ src/queue.c       |   28 +-
+ src/queue.h       |   14 +-
+ src/receiver.c    |   87 +-
+ src/sender.c      |   53 +-
+ text.txt          | 2340 ++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ 21 files changed, 3003 insertions(+), 64 deletions(-)
+
+commit 86ddeb66ffcb2fed906be6fe7710d3969cb9c2a6
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Mar 3 15:55:14 2021 +0100
+
+    beton pour le selective repeat
+
+ Makefile       |  18 ++++-
+ src/heap       | Bin 0 -> 16784 bytes
+ src/minheap.c  |  91 +++++++++++++++++++++++
+ src/minheap.h  |  19 +++++
+ src/queue.c    | 224 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ src/queue.h    |  16 +++++
+ src/receiver.c |   3 +
+ src/sender.c   |   8 ++-
+ 8 files changed, 374 insertions(+), 5 deletions(-)
+
+commit 1834839842c64cb1e169e13be47a46a9c846f9d0
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Mar 3 10:21:59 2021 +0100
+
+    fichier envoye
+
+ packet_implem.o     | Bin 7496 -> 0 bytes
+ receiver            | Bin 22680 -> 0 bytes
+ receiver.o          | Bin 6128 -> 0 bytes
+ sender              | Bin 22744 -> 0 bytes
+ sender.o            | Bin 8128 -> 0 bytes
+ src/packet_implem.c |   2 +-
+ src/receiver.c      |  75 +++++++++++++++++++++++++++++++++++++++-------------
+ src/sender.c        |  73 +++++++++++++++++++++++++++++++++++++-------------
+ 8 files changed, 111 insertions(+), 39 deletions(-)
+
+commit f3e4b109073ff7652bf863694d5ce3859f34e3f8
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Sun Feb 28 20:40:44 2021 +0100
+
+    ajout commentaire
+
+ packet_implem.o | Bin 0 -> 7496 bytes
+ receiver        | Bin 0 -> 22680 bytes
+ receiver.o      | Bin 0 -> 6128 bytes
+ sender          | Bin 0 -> 22744 bytes
+ sender.o        | Bin 0 -> 8128 bytes
+ src/sender.c    |   2 +-
+ 6 files changed, 1 insertion(+), 1 deletion(-)
+
+commit c8e3b27bd948d1e7fe570178518b024556e0126f
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Sun Feb 28 19:13:38 2021 +0100
+
+    fin du sender et receiver sans window
+
+ Makefile               |  62 +++++-----------------
+ receiver               | Bin 16960 -> 0 bytes
+ src/log.o              | Bin 2352 -> 0 bytes
+ src/packet_implem      | Bin 0 -> 17800 bytes
+ src/packet_implem.c    |  14 +++--
+ src/packet_interface.h |   1 +
+ src/packeti            | Bin 0 -> 17800 bytes
+ src/receiver.c         | 140 +++++++++++++++++++++++++++++++++++++++++++++----
+ src/receiver.o         | Bin 4384 -> 0 bytes
+ src/sender.c           |  49 +++++++----------
+ src/sender.o           | Bin 9104 -> 0 bytes
+ text.txt               |   1 +
+ 12 files changed, 172 insertions(+), 95 deletions(-)
+
+commit 347797a0d65d2fed9425f6de26f9ae1c5f20938a
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Fri Feb 26 19:40:15 2021 +0100
+
+    fin du sender
+
+ sender       | Bin 17536 -> 0 bytes
+ src/sender.c |  21 +++++++++++++++++----
+ src/sender.o | Bin 6720 -> 9104 bytes
+ 3 files changed, 17 insertions(+), 4 deletions(-)
+
+commit 593802cb6f1b7f6402f405204dbc45d18ceb0b82
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Feb 24 17:35:32 2021 +0100
+
+    premiere approche du sender
+
+ src/sender.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+commit cf49ddac00aecc91ed27bab4785a0ab8175b6fe6
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Feb 24 17:32:45 2021 +0100
+
+    premiere approche du sender
+
+ receiver       | Bin 16960 -> 16960 bytes
+ sender         | Bin 16960 -> 17536 bytes
+ src/log.o      | Bin 0 -> 2352 bytes
+ src/receiver.o | Bin 0 -> 4384 bytes
+ src/sender.c   | 127 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+ src/sender.o   | Bin 0 -> 6720 bytes
+ 6 files changed, 126 insertions(+), 1 deletion(-)
+
+commit 0139407da9f54930ec31b322eab1964576b52d71
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Feb 24 15:45:28 2021 +0100
+
+    test
+
+ src/sender.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit 14c2191bc1f6c5339bcf4169ae2e6a9268c06b66
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Feb 24 15:44:36 2021 +0100
+
+    packet imple
+
+ receiver               | Bin 0 -> 16960 bytes
+ sender                 | Bin 0 -> 16960 bytes
+ src/packet_implem.c    | 387 +++++++++++++++++++++++++++++++++++++++++++++++++
+ src/packet_interface.h | 134 +++++++++++++++++
+ src/receiver.c         |   1 -
+ 5 files changed, 521 insertions(+), 1 deletion(-)
+
+commit a0009d369d52a00c6c2ca8afc2dc38a1babc046d
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Feb 24 15:34:45 2021 +0100
+
+    hjh
+
+ src/receiver.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit c1d0501fd6ae6e8da167a4749adb6edad78fbe24
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Feb 24 15:21:13 2021 +0100
+
+    f
+
+ src/receiver.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+commit aaa45a726b50099ae152f4c4a733787775a22cc6
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Feb 24 15:08:00 2021 +0100
+
+    test push
+
+ README.md | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+commit 8e562e4b648a21bff52814a172ab1aaf8e6826c5
+Author: Simon Grognard <grognardsimon@gmail.com>
+Date:   Wed Feb 24 15:04:03 2021 +0100
+
+    first
+
+ Makefile             | 58 ++++++++++++++++++++++++++++++++++++++++++++++++
+ README.md            | 19 ++++++++++++++++
+ src/log.c            | 21 ++++++++++++++++++
+ src/log.h            | 57 +++++++++++++++++++++++++++++++++++++++++++++++
+ src/receiver.c       | 58 ++++++++++++++++++++++++++++++++++++++++++++++++
+ src/sender.c         | 62 ++++++++++++++++++++++++++++++++++++++++++++++++++++
+ tests/run_tests.sh   |  6 +++++
+ tests/simple_test.sh | 58 ++++++++++++++++++++++++++++++++++++++++++++++++
+ 8 files changed, 339 insertions(+)
