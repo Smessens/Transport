@@ -122,9 +122,10 @@ int initBufWindow(struct bufWindow *bufWindow){
 
 int clearN(struct bufWindow *bufW, int n){
     if(n == 0)return 0;
+    fprintf(stderr, "[SENDER] freeClear: %d\n",n);
 
     for(int i = 0; i < n; i++){
-        fprintf(stderr, "[SENDER] freeClear: \n");
+      fprintf(stderr, "[SENDER] loop freeClear: %d\n",n,i);
 
         free(bufW->tableau[(bufW->next+i)%bufW->sizeMax]);
     }
