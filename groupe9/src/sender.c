@@ -85,6 +85,8 @@ int getTimeMilli(){
     clock_gettime(CLOCK_REALTIME, packettime);
     time_t seconde = packettime->tv_sec;
     time_t nanoseconde = packettime->tv_nsec;
+    fprintf(stderr, "[SENDER] freePkt: \n");
+
     free(packettime);
     return seconde * 1000 + nanoseconde/1000000;
 }
@@ -122,6 +124,8 @@ int clearN(struct bufWindow *bufW, int n){
     if(n == 0)return 0;
 
     for(int i = 0; i < n; i++){
+        fprintf(stderr, "[SENDER] freeClear: \n");
+
         free(bufW->tableau[(bufW->next+i)%bufW->sizeMax]);
     }
     bufW->size = bufW->size - n;
