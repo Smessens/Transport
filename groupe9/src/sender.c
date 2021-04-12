@@ -232,6 +232,7 @@ int feedBufWindow(int fd, struct bufWindow *bufWindow, struct pkt *pkt){
         if(statusCode != PKT_OK){
             fprintf(stderr, "[SENDER] Error when encode packet in feedbuffer : %d\n", statusCode);
         }
+        fprintf(stderr, "[SENDER] free: \n");
         free(buf);
         insert(bufWindow,bufEncode,size);
     }
